@@ -1,14 +1,77 @@
-body {
-    color: blue;
+
+
+.header {
+    height: 71px;
+}
+.sandwich {
+
+}
+.icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40px;
+    height: 40px;
+        border: #e3e3e3 1px solid;
 }
 
+.icon:last-child {
+    margin-left: 8px;
+}
 
+.icons-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.fa-bars,
+.fa-search,
+.fa-user {
+    color: #797878;
+}
+.redLine {
+    height: 5px;
+    background: #900022;
+}
+
+@font-face {
+font-family: "Proxima Nova Regular";
+src: url("ProximaNovaRegular.otf") format("opentype");
+}
+body {
+    /*color: blue;*/
+    font-family: "Proxima Nova Regular";
+}
+
+.mainLayout {
+    margin: 0 auto;
+    padding: 5px 15px;
+    max-width: 1175px;
+}
+.flexCenter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
 
 
 
 html {
     box-sizing: border-box;
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -83,4 +146,3 @@ fieldset {
 textarea {
     resize: vertical;
 }
-
